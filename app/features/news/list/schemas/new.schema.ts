@@ -9,7 +9,7 @@ const ArticleSchema = z.object({
   publishedAt: z.string(),
   content: z.string().nullable(),
   source: z.object({
-    id: z.string(),
+    id: z.string().nullable(),
     name: z.string(),
   }),
 });
